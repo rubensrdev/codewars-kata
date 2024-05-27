@@ -395,7 +395,7 @@ print(replaceAll(array: [1,23,6,98,34,134,1,0], old: 1, new: 5))
 
  //------------------------------------
  // KATA https://www.codewars.com/kata/562f91ff6a8b77dfe900006e
- */
+ 
 
 func movie(card: Double, ticket: Double, perc: Double) -> Int {
     var count = 0.0
@@ -411,7 +411,27 @@ func movie(card: Double, ticket: Double, perc: Double) -> Int {
 print(movie(card: 500, ticket: 15, perc: 0.9))
 print(movie(card: 100, ticket: 10, perc: 0.95))
 
+ //------------------------------------
+ // KATA https://www.codewars.com/kata/55b95c76e08bd5eef100001e
+ 
 
+func countArare(_ n: Int) -> String {
+    guard n > 0 else {return ""}
+    var pairs = Array(repeating: "adak", count: n/2)
+    if n % 2 == 1 {pairs.append("anane")}
+    return pairs.joined(separator: " ")
+}
 
+countArare(1)
+countArare(2)
+countArare(3)
+countArare(5)
 
+ //------------------------------------
+ // KATA https://www.codewars.com/kata/63b84f54693cb10065687ae5
+ */
 
+func createBox(_ m:Int, _ n:Int) -> [[Int]]
+{
+  return [[]]
+}
