@@ -384,54 +384,55 @@ import Foundation
  
  //------------------------------------
  // KATA https://www.codewars.com/kata/57ae18c6e298a7a6d5000c7a/
-
-
-func replaceAll<T: Equatable>(array: [T], old: T, new: T) -> [T] {
-    return array.map { $0 == old ? new : $0 }
-}
-
-print(replaceAll(array: ["hi", "sir", "hi"], old: "hi", new: "hello"))
-print(replaceAll(array: [1,23,6,98,34,134,1,0], old: 1, new: 5))
-
+ 
+ 
+ func replaceAll<T: Equatable>(array: [T], old: T, new: T) -> [T] {
+ return array.map { $0 == old ? new : $0 }
+ }
+ 
+ print(replaceAll(array: ["hi", "sir", "hi"], old: "hi", new: "hello"))
+ print(replaceAll(array: [1,23,6,98,34,134,1,0], old: 1, new: 5))
+ 
  //------------------------------------
  // KATA https://www.codewars.com/kata/562f91ff6a8b77dfe900006e
  
-
-func movie(card: Double, ticket: Double, perc: Double) -> Int {
-    var count = 0.0
-        var sumA = card
-        
-        repeat {
-            count += 1
-            sumA += ticket * pow(perc, count)
-        } while sumA.rounded(.up) >= ticket * count
-    return Int(count)
-}
-
-print(movie(card: 500, ticket: 15, perc: 0.9))
-print(movie(card: 100, ticket: 10, perc: 0.95))
-
+ 
+ func movie(card: Double, ticket: Double, perc: Double) -> Int {
+ var count = 0.0
+ var sumA = card
+ 
+ repeat {
+ count += 1
+ sumA += ticket * pow(perc, count)
+ } while sumA.rounded(.up) >= ticket * count
+ return Int(count)
+ }
+ 
+ print(movie(card: 500, ticket: 15, perc: 0.9))
+ print(movie(card: 100, ticket: 10, perc: 0.95))
+ 
  //------------------------------------
  // KATA https://www.codewars.com/kata/55b95c76e08bd5eef100001e
  
-
-func countArare(_ n: Int) -> String {
-    guard n > 0 else {return ""}
-    var pairs = Array(repeating: "adak", count: n/2)
-    if n % 2 == 1 {pairs.append("anane")}
-    return pairs.joined(separator: " ")
-}
-
-countArare(1)
-countArare(2)
-countArare(3)
-countArare(5)
-
+ 
+ func countArare(_ n: Int) -> String {
+ guard n > 0 else {return ""}
+ var pairs = Array(repeating: "adak", count: n/2)
+ if n % 2 == 1 {pairs.append("anane")}
+ return pairs.joined(separator: " ")
+ }
+ 
+ countArare(1)
+ countArare(2)
+ countArare(3)
+ countArare(5)
+ 
+ 
  //------------------------------------
- // KATA https://www.codewars.com/kata/63b84f54693cb10065687ae5
- */
+ // KATA https://www.codewars.com/kata/5c5086287bc6600001c7589a
 
-func createBox(_ m:Int, _ n:Int) -> [[Int]]
-{
-  return [[]]
+
+func isNegativeZero(_ n: Float) -> Bool {
+    return String(n) == "-0.0"
 }
+ */
