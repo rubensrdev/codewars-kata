@@ -436,3 +436,53 @@ func isNegativeZero(_ n: Float) -> Bool {
     return String(n) == "-0.0"
 }
  */
+
+/* KATA https://www.codewars.com/kata/5566b0dd450172dfc4000005/
+func lengthOfSequence(_ arr: [Int], _ key: Int) -> Int {
+    var firstIndex: Int? = nil
+    var lastIndex: Int? = nil
+    var keyCount = 0
+
+    // Encontrar el primer y último índice del key y contar ocurrencias
+    for (index, item) in arr.enumerated() {
+        if item == key {
+            keyCount += 1
+            if firstIndex == nil {
+                firstIndex = index
+            }
+            lastIndex = index
+        }
+    }
+
+    // Verificar que haya exactamente dos ocurrencias del key
+    if keyCount == 2, let first = firstIndex, let last = lastIndex {
+        return last - first + 1
+    } else {
+        return 0
+    }
+}
+
+print(lengthOfSequence([0, -3, 7, 4, 0, 3, 7, 9], 7))
+print(lengthOfSequence([7, 1, 7, 1, 7], 7))
+print(lengthOfSequence([9, -3, 7, 4, 0, 3, 7, 9], 9)) // [9, -3, 7, 4, 0, 3, 7, 9] - 9 - expected 8
+print(lengthOfSequence([0, -3, 7, 4, 4, 3, 7, 9], 4)) // [0, -3, 7, 4, 4, 3, 7, 9] - 4 - expected 2
+ */
+
+/* KATA https://www.codewars.com/kata/58649884a1659ed6cb000072
+
+func update_light(_ current: String) -> String {
+    var newStatus: String = ""
+    switch current {
+    case "red":
+        newStatus = "green"
+    case "green":
+        newStatus = "yellow"
+    case "yellow":
+        newStatus = "red"
+    default:
+        newStatus = "Error"
+    }
+    return newStatus
+}
+ */
+
