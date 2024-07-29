@@ -486,3 +486,24 @@ func update_light(_ current: String) -> String {
 }
  */
 
+/* KATA https://www.codewars.com/kata/5ae62fcf252e66d44d00008e
+
+func expressionMatter(_ a: Int, _ b: Int, _ c: Int) -> Int {
+    var maximumValueObtained = 0
+    if ((a >= 1 && b >= 1 && c >= 1) && (a <= 10 && b <= 10 && c <= 10)) {
+        var firstExpressionResult: Int = a * (b + c)
+        var secondExpressionResult: Int = a * b * c
+        var thirdExpressionResult: Int = a + b * c
+        var fourthExpressionResult: Int = (a + b) * c
+        var fifthExpressionResult: Int = a + b + c
+        let numbers: Array = [firstExpressionResult, secondExpressionResult, thirdExpressionResult, fourthExpressionResult, fifthExpressionResult]
+        maximumValueObtained = numbers.max()!
+    }
+    return maximumValueObtained
+}
+
+print(expressionMatter(2, 1, 2))
+print(expressionMatter(2, 1, 1))
+print(expressionMatter(1, 1, 1))
+print(expressionMatter(10, 5, 6))
+ */
