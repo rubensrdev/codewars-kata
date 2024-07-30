@@ -507,3 +507,22 @@ print(expressionMatter(2, 1, 1))
 print(expressionMatter(1, 1, 1))
 print(expressionMatter(10, 5, 6))
  */
+
+/* KATA https://www.codewars.com/kata/54b81566cd7f51408300022d
+func wordSearch(_ str:String, _ arr:[String]) -> [String] {
+    var result: Array = ["Empty"]
+    var clearResult: Bool = true
+    if arr.count > 0 {
+        for item in arr {
+            if item.lowercased().contains(str.lowercased()) {
+                if clearResult {
+                    clearResult = false
+                    result = []
+                }
+                result.append(item)
+            }
+        }
+    }
+    return result
+}
+ */
