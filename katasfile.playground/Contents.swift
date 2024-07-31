@@ -525,4 +525,50 @@ func wordSearch(_ str:String, _ arr:[String]) -> [String] {
     }
     return result
 }
+*/
+
+/* KATA https://www.codewars.com/kata/50654ddff44f800200000007
+func shortLongShort(_ a: String, _ b: String) -> String {
+    var shortLongShortCad = ""
+    let aCount = a.count
+    let bCount = b.count
+    
+    if aCount > bCount {
+        shortLongShortCad = "\(b + a + b)"
+    } else {
+        shortLongShortCad = "\(a + b + a)"
+    }
+    
+    return shortLongShortCad
+}
+// a best solution
+func shortLongShort(_ a: String, _ b: String) -> String {
+    a.count < b.count ? a + b + a : b + a + b
+}
+*/
+
+/* KATA https://www.codewars.com/kata/515de9ae9dcfc28eb6000001
+func solution(_ str: String) -> [String] {
+    var result: [String] = []
+    if str.count > 0 {
+        var i: Int = 0
+        let characters = Array(str)
+        while i < characters.count {
+            if i + 1 < characters.count {
+                result.append(String(characters[i]) + String(characters[i + 1]))
+            } else {
+                result.append(String(characters[i]) + "_")
+            }
+            i += 2
+        }
+    }
+    return result
+}
+print(solution("abcde"))
  */
+/* KATA https://www.codewars.com/kata/58223370aef9fc03fd000071 */
+func dashatize(_ number: Int) -> String {
+    var result: String = ""
+
+    return result
+}
