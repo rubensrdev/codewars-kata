@@ -569,6 +569,31 @@ print(solution("abcde"))
 /* KATA https://www.codewars.com/kata/58223370aef9fc03fd000071 */
 func dashatize(_ number: Int) -> String {
     var result: String = ""
-
+    let numberCad = String(abs(number))
+    for (index, charNumber) in numberCad.enumerated() {
+        if let digit = Int(String(charNumber)) {
+            if digit % 2 != 0 {
+                if index > 0 && result.last != "-" {
+                    result.append("-")
+                }
+                result.append(String(digit))
+                if index < numberCad.count - 1 {
+                    result.append("-")
+                }
+            } else {
+                result.append(String(digit))
+            }
+        }
+    }
+    if result.first == "-" {
+        result.removeFirst()
+    }
+    if result.last == "-" {
+        result.removeLast()
+    }
+    
     return result
 }
+
+print(dashatize(283))
+print(dashatize(884567823634))
