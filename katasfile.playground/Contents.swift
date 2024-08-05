@@ -566,7 +566,7 @@ func solution(_ str: String) -> [String] {
 }
 print(solution("abcde"))
  */
-/* KATA https://www.codewars.com/kata/58223370aef9fc03fd000071 */
+/* KATA https://www.codewars.com/kata/58223370aef9fc03fd000071
 func dashatize(_ number: Int) -> String {
     var result: String = ""
     let numberCad = String(abs(number))
@@ -597,3 +597,62 @@ func dashatize(_ number: Int) -> String {
 
 print(dashatize(283))
 print(dashatize(884567823634))
+ */
+/* KATA https://www.codewars.com/kata/5503013e34137eeeaa001648
+
+func diamond(_ n: Int) -> String? {
+    // Verificar que n sea impar y positivo
+    guard n > 0 && n % 2 != 0 else {
+        return nil
+    }
+    
+    var diamond = ""
+    let middle = n / 2
+    
+    // Parte superior del diamante
+    for i in 0...middle {
+        let spaces = String(repeating: " ", count: middle - i)
+        let stars = String(repeating: "*", count: i * 2 + 1)
+        diamond += spaces + stars + "\n"
+    }
+    
+    // Parte inferior del diamante
+    for i in (0..<middle).reversed() {
+        let spaces = String(repeating: " ", count: middle - i)
+        let stars = String(repeating: "*", count: i * 2 + 1)
+        diamond += spaces + stars + "\n"
+    }
+    
+    return diamond
+}
+
+print(diamond(3))
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
