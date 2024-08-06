@@ -629,7 +629,27 @@ func diamond(_ n: Int) -> String? {
 print(diamond(3))
  */
 
+/* KATA https://www.codewars.com/kata/59ca8246d751df55cc00014c
+func hero(bullets: Int, dragons: Int) -> Bool {
+    let bulletsNeeded = dragons * 2
+    return bullets >= bulletsNeeded
+}
+ */
 
+/* KATA https://www.codewars.com/kata/568d0dd208ee69389d000016
+func RentalCarCost(_ days: Int) -> Int {
+    let dailyRate = 40
+    var totalCost = days * dailyRate
+    
+    if days >= 7 {
+        totalCost -= 50
+    } else if days >= 3 {
+        totalCost -= 20
+    }
+    
+    return totalCost
+}
+ */
 
 
 
